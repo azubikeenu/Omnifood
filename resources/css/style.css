@@ -33,6 +33,15 @@ section {
   padding: 1%;
 }
 
+.clear_fix {
+  zoom: 1;
+}
+.clear_fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*---------------PARAGRAPH----------------*/
 .long_copy {
   line-height: 145%;
@@ -120,14 +129,14 @@ h1 {
   font-size: 200%;
   margin-bottom: 20px;
   word-spacing: 4px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 h2 {
   font-size: 150%;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 h3 {
@@ -141,7 +150,7 @@ h2:after {
   height: 4px;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 /*--------------------------*/
@@ -183,4 +192,92 @@ h2:after {
 .btn-ghost:active {
   border: 1px solid #f39c12;
   color: #ffffff;
+}
+
+/*--------------------------*/
+/*FEATURES -------------*/
+/*--------------------------*/
+
+.section_meals .long_copy {
+  margin-bottom: 30px;
+}
+
+/*--------------------------*/
+/*MEALS SHOW CASE -------------*/
+/*--------------------------*/
+.section_meals {
+  padding: 0;
+}
+
+.meals_showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals_showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal_photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+.meal_photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: transform 0.5s ease-in, opacity 0.5s;
+}
+
+.meal_photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+/*--------------------------*/
+/*STEPS SECTION  -------------*/
+/*--------------------------*/
+
+.steps {
+  background-color: rgba(255, 255, 255, 0.041);
+}
+
+.step_box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+.step_box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app_screen {
+  width: 40%;
+}
+
+.work_steps {
+  margin-bottom: 50px;
+}
+
+.work_steps div {
+  border: 2px solid #e8930c;
+  text-align: center;
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  padding: 7px;
+  float: left;
+  font-size: 150%;
+  margin-right: 10px;
+}
+
+.work_steps:last-of-type {
+  margin-bottom: 100px;
 }
