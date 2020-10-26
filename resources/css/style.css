@@ -127,6 +127,14 @@ header {
   margin-top: 20px;
 }
 
+.logo_black {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+  display: none;
+}
+
 .main_nav {
   float: right;
   list-style: none;
@@ -150,6 +158,55 @@ header {
 .main_nav li a:hover,
 .main_nav li a:active {
   border-bottom: 2px solid #f39c12;
+}
+
+/**** Sticky navi*********/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.98;
+  width: 100%;
+  box-shadow: 0px 2px 2px rgb(222, 222, 222);
+  z-index: 9999;
+}
+
+.sticky .main_nav li a:link,
+.sticky .main_nav li a:visited {
+  padding: 15px 0px;
+  color: #555;
+}
+
+.sticky .logo_black {
+  display: inline-block;
+}
+.sticky .logo {
+  display: none;
+}
+
+.sticky .main_nav {
+  float: right;
+  list-style: none;
+  margin-top: 15px;
+}
+
+/* mobile nav*/
+
+.mobile_nav_icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+  border-bottom: none;
+}
+
+.mobile_nav_icon ion-icon {
+  font-size: 200%;
+  color: #ffffff;
+}
+a.mobile_nav_icon {
+  border-bottom: none;
 }
 
 /*---------------HEADINGS----------------*/
@@ -526,4 +583,19 @@ footer {
   text-align: center;
   color: #ddd;
   padding: 26px;
+}
+
+/*--------------------------*/
+/*ANIMATIONS  -------------*/
+/*--------------------------*/
+
+.js_wp_1,
+.js_wp_2,
+.js_wp_3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js_wp_4 {
+  animation-duration: 1s;
 }

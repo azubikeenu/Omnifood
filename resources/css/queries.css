@@ -89,8 +89,24 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
-  .main_nav {
+  /* .main_nav {
     display: none;
+  } */
+  .mobile_nav_icon {
+    display: inline-block;
+  }
+
+  .main_nav {
+    float: left;
+  }
+
+  .main_nav li {
+    display: block;
+  }
+  .main_nav li a:link,
+  .main_nav li a:visited {
+    display: block;
+    border-bottom: none;
   }
 
   .long_copy {
