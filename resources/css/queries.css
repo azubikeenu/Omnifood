@@ -1,0 +1,142 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero_text_box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .long_copy {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .step_box {
+    margin-top: 10px;
+  }
+  .step_box:last-child {
+    margin-top: 10px;
+  }
+  .work_steps {
+    margin-bottom: 40px;
+  }
+  .work_steps:last-of-type {
+    margin-bottom: 100px;
+  }
+
+  .app_screen {
+    width: 50%;
+  }
+
+  .icon_small {
+    width: 18px;
+  }
+  .city_feature {
+    font-size: 75%;
+  }
+
+  .plan_box {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .plan_box li {
+    font-size: 80%;
+  }
+
+  .plan_price {
+    font-size: 150%;
+  }
+  .section_testimonials blockquote {
+    font-size: 90%;
+    line-height: 145%;
+  }
+  .contact_form {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .body {
+    font-size: 16px;
+  }
+  .step_box {
+    padding: 30px 0;
+  }
+  .row,
+  .hero_text_box {
+    padding: 0 4%;
+  }
+  .hero_text_box {
+    margin-top: 16px;
+  }
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  .main_nav {
+    display: none;
+  }
+
+  .long_copy {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  h1 {
+    font-size: 170%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  .work_steps div {
+    font-size: 120%;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    padding: 3px;
+  }
+  .step_box:first-child {
+    text-align: center;
+  }
+
+  .logo {
+    height: 80px;
+  }
+  .app_screen {
+    width: 40%;
+  }
+
+  .contact_form {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+  .contact_form {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+}
