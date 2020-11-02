@@ -44,7 +44,7 @@
     width: 18px;
   }
   .city_feature {
-    font-size: 75%;
+    font-size: 85%;
   }
 
   .plan_box {
@@ -89,15 +89,21 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
-  /* .main_nav {
+  .main_nav {
     display: none;
-  } */
+  }
+
+  /****main_nav*********/
+
   .mobile_nav_icon {
     display: inline-block;
   }
 
   .main_nav {
     float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 100%;
   }
 
   .main_nav li {
@@ -107,12 +113,35 @@
   .main_nav li a:visited {
     display: block;
     border-bottom: none;
+    padding: 10px 0px;
+  }
+
+  /****sticky_nav***********/
+
+  .sticky .main_nav {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .sticky .main_nav li a:link,
+  .sticky .main_nav li a:visited {
+    padding: 10px 0px;
+  }
+  .sticky .mobile_nav_icon {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .sticky .mobile_nav_icon .nav_icon {
+    color: black;
   }
 
   .long_copy {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 90%;
   }
   h1 {
     font-size: 170%;
@@ -154,5 +183,29 @@
     margin-left: 0%;
     margin-right: 0%;
     width: 100%;
+  }
+  .hero_text_box .btn-full {
+    margin-bottom: 10px;
+  }
+
+  /***main_nav****/
+
+  .main_nav {
+    float: left;
+    margin-top: 15px;
+    margin-left: 0px;
+    font-size: 100%;
+    display: none;
+  }
+  .logo {
+    height: 50px;
+  }
+
+  .main_nav .mobile_nav_icon .nav_icon {
+    margin: 5px;
+  }
+
+  .sticky .logo_black {
+    display: none;
   }
 }

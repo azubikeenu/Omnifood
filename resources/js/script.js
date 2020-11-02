@@ -91,10 +91,12 @@ $( function () {
         offset: '50%'
     } )
 
+    //Mobile Navigation 
+    $( '.js_mobile_nav_icon' ).click( function () {
+        const mainNav = $( '.js_main_nav' );
+        mainNav.slideToggle( 200 );
 
-
-
-
+    } )
 
 } )
 
